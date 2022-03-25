@@ -55,7 +55,7 @@ export function Events() {
                         <Event
                         title={item.name}
                         id={item.id}
-                        eventUrl={`/${item.id}`}
+                        eventUrl={`events/${item.id}`}
                         limit={5}
                         />
                     </div>

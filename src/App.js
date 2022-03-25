@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/:id" element={<EventPage />} />
+          <Route path="/events/:id" element={<EventPage />} />
           <Route path="/login" element={<LoginForm/>} /> 
         </Routes>
         <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
