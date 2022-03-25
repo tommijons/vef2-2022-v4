@@ -6,7 +6,7 @@ import s from './Event.module.scss';
 const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
 
 Event.propTypes = {
-    id: propTypes.string.isRequired,
+    id: propTypes.number.isRequired,
     eventUrl: propTypes.string,
     limit: propTypes.number,
 }
@@ -15,7 +15,6 @@ export function Event({ id, onDelete, eventUrl, limit = -1}) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [eventsItem, setEventsItem] = useState(null);
-    //const [registration, setRegistation];
 
     useEffect(() => {
         async function fetchData() {
