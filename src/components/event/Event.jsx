@@ -1,7 +1,6 @@
-import classNames from 'classnames';
 import propTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import s from './Event.module.scss';
 
 const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';

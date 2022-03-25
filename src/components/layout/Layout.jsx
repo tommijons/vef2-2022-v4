@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import s from './Layout.module.scss';
 
 export function Layout({ title, children, footer }) {

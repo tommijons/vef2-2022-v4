@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import classNames from 'classnames';
 import { Event } from '../event/Event';
 import s from './Events.module.scss';
 

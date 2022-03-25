@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import React from 'react';
 import './App.css';
-import { Route, Routes, NavLink, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Login } from './components/login/Login';
 import { Layout } from './components/layout/Layout';
 import { EventPage } from './pages/Event';
