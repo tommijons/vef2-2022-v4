@@ -6,7 +6,6 @@ export function Home() {
     <section> 
       <h1>Viðburðir á næstunni</h1>
       <Events />
-    </section>
-    
+    </section>  
   );
 }

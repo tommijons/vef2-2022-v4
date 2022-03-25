@@ -21,10 +21,6 @@ function App() {
         <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
       </BrowserRouter>
     </Layout>
-    
   );
-    
-
 }
-
 export default App;

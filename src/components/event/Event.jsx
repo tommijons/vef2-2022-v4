@@ -23,7 +23,7 @@ export function Event({ id, onDelete, eventUrl, limit = -1}) {
     
           let json;
     
-          const url = new URL(id, apiUrl);
+          const url = new URL(id, 'https:vef2-20222-v3-synilausn.herokuapp.com/events/');
     
           try {
             const result = await fetch(url);

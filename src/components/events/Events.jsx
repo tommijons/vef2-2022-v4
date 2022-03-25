@@ -15,7 +15,7 @@ export function Events() {
             setError(null);
             let json;
             try {
-                const result = await fetch(apiUrl);
+                const result = await fetch('https:vef2-20222-v3-synilausn.herokuapp.com/events/');
 
                 if (!result.ok) {
                     throw new Error('result not ok');
