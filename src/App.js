@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
+import { Route, Routes, NavLink, BrowserRouter } from 'react-router-dom';
+import { Login } from './components/login/Login';
+import { Layout } from './components/layout/Layout';
+import { EventPage } from './pages/Event';
+import { Home } from './pages/Home';
+import { LoginForm } from './pages/login';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout title='Viðburðasíðan'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/:id" element={<EventPage />} />
+          <Route path="/login" element={<LoginForm/>} /> 
+        </Routes>
+        <Login loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
+      </BrowserRouter>
+    </Layout>
+    
   );
+    
+
 }
 
 export default App;
