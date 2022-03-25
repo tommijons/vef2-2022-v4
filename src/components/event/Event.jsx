@@ -15,6 +15,7 @@ export function Event({ id, onDelete, eventUrl, limit = -1}) {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [eventsItem, setEventsItem] = useState(null);
+    //const [registration, setRegistation];
 
     useEffect(() => {
         async function fetchData() {
@@ -63,7 +64,7 @@ export function Event({ id, onDelete, eventUrl, limit = -1}) {
       }
 
     return (
-        <section className={s.event}>
+      <section className={s.event}>
         <h2 className={s.event__title}>{eventsItem && eventsItem.name}</h2>
         <p>
             {eventsItem && eventsItem.description}
