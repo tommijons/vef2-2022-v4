@@ -1,19 +1,10 @@
 import classNames from 'classnames';
 import propTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import s from './Button.module.scss';
 
 export function Button({ children, onClick, size }) {
   const [toggled, setToggled] = useState(false);
-  
-  useEffect(() => {
-    console.log('button loaded');
-
-    return () => {
-      console.log('button unloaded')
-    }
-  }, [])
-
 
   const localOnClick = (e) => {
     setToggled(!toggled);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Event } from '../event/Event';
 import s from './Events.module.scss';
 
-//const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
+const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
 
 export function Events() {
     const [loading, setLoading] = useState(false);
@@ -15,7 +15,7 @@ export function Events() {
             setError(null);
             let json;
             try {
-                const result = await fetch('https:vef2-20222-v3-synilausn.herokuapp.com/events/');
+                const result = await fetch(apiUrl);
 
                 if (!result.ok) {
                     throw new Error('result not ok');
@@ -28,7 +28,6 @@ export function Events() {
             } finally {
                 setLoading(false);
             }
-            console.log('json :>> ', json);
             setEvents(json.items);
         }
         fetchData();

@@ -1,18 +1,14 @@
 .button {
-    background-color: white;
+    background-color: rgb(250, 245, 245);
     border-radius: 8px;
     border: 1px solid #eee;
   }
   
   .small {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   
   .large {
     font-size: 1.5rem;
   }
   
-  .toggled {
-    background-color: black;
-    color: white;
-  }

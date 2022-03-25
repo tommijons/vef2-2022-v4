@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import s from './Event.module.scss';
 
-//const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
+const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
 
 Event.propTypes = {
     id: propTypes.number.isRequired,
@@ -23,7 +23,7 @@ export function Event({ id, onDelete, eventUrl, limit = -1}) {
     
           let json;
     
-          const url = new URL(id, 'https:vef2-20222-v3-synilausn.herokuapp.com/events/');
+          const url = new URL(id, apiUrl);
     
           try {
             const result = await fetch(url);

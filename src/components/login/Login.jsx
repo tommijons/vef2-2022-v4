@@ -8,7 +8,7 @@ export const Login = ({ loggedIn, setLoggedIn }) => {
     <section className={s.login}>
       {loggedIn ? (
         <div>
-          <p className={s.login__loggedIn}>Skráður inn sem: test</p>
+          <p className={s.login__loggedIn}>Skráður inn sem test</p>
           <Button onClick={() => setLoggedIn(false)}>Útskrá</Button>
         </div>
       ) : (
