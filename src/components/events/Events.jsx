@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Event } from '../event/Event';
 import s from './Events.module.scss';
 
-const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
+//const apiUrl = 'https:vef2-20222-v3-synilausn.herokuapp.com/events/';
 
 export function Events() {
     const [loading, setLoading] = useState(false);
